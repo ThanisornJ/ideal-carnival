@@ -12,7 +12,7 @@ SMP is an equipment inventory and requisition management application. Authentica
 
 ## Requirements
 
-- PHP 8.3+
+- PHP 8.5+
 - Composer
 - Node.js and npm
 - npm
