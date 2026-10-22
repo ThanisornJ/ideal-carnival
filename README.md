@@ -1,6 +1,6 @@
-# SMP
+# Asset Management System
 
-SMP is an equipment inventory and requisition management application. Authenticated users can view equipment availability and submit requests, while administrators can manage equipment, users, and requisition approvals.
+AMS is an equipment inventory and requisition management application. Authenticated users can view equipment availability and submit requests, while administrators can manage equipment, users, and requisition approvals.
 
 ## Stack
 
@@ -26,6 +26,19 @@ composer run setup
 ```
 
 This installs PHP and JavaScript dependencies, creates `.env`, generates the application key, runs migrations, and builds frontend assets.
+
+Load the demo users, equipment, and requisitions after setup:
+
+```bash
+php artisan db:seed
+```
+
+Demo accounts:
+
+| Role | Email | Password |
+| --- | --- | --- |
+| Administrator | `admin@example.com` | `password` |
+| User | `demo.user@example.com` | `password` |
 
 ## Start the project
 
