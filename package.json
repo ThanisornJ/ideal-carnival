@@ -1,0 +1,63 @@
+{
+    "$schema": "https://www.schemastore.org/package.json",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "vite build",
+        "build:ssr": "vite build && vite build --ssr",
+        "dev": "vite",
+        "format": "prettier --write resources/",
+        "format:check": "prettier --check resources/",
+        "lint": "eslint . --fix",
+        "lint:check": "eslint .",
+        "types:check": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.39.4",
+        "@laravel/vite-plugin-wayfinder": "^0.1.7",
+        "@stylistic/eslint-plugin": "^5.10.0",
+        "@types/node": "^22.19.19",
+        "babel-plugin-react-compiler": "^1.0.0",
+        "eslint": "^9.39.4",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-import-resolver-typescript": "^4.4.4",
+        "eslint-plugin-import": "^2.32.0",
+        "eslint-plugin-react": "^7.37.5",
+        "eslint-plugin-react-hooks": "^7.1.1",
+        "postcss": "^8.5.14",
+        "postcss-preset-mantine": "^1.18.0",
+        "postcss-simple-vars": "^7.0.1",
+        "prettier": "^3.8.3",
+        "typescript-eslint": "^8.59.4"
+    },
+    "dependencies": {
+        "@inertiajs/react": "^3.1.1",
+        "@inertiajs/vite": "^3.1.1",
+        "@laravel/passkeys": "^0.2.0",
+        "@mantine/core": "^9.2.1",
+        "@mantine/form": "^9.2.1",
+        "@mantine/hooks": "^9.2.1",
+        "@mantine/mcp-server": "^9.2.1",
+        "@mantine/modals": "^9.2.1",
+        "@mantine/notifications": "^9.2.1",
+        "@mantine/nprogress": "^9.2.1",
+        "@tabler/icons-react": "^3.44.0",
+        "@types/react": "^19.2.14",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^5.2.0",
+        "clsx": "^2.1.1",
+        "concurrently": "^9.2.1",
+        "globals": "^15.15.0",
+        "input-otp": "^1.4.2",
+        "laravel-vite-plugin": "^3.1.0",
+        "lucide-react": "^0.475.0",
+        "react": "^19.2.6",
+        "react-dom": "^19.2.6",
+        "typescript": "^5.9.3",
+        "vite": "^8.0.13"
+    },
+    "exports": {
+        ".": "./dist/index.js",
+        "./styles.css": "./dist/styles.css"
+    }
+}
